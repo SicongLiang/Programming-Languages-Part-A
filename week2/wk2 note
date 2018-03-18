@@ -1,0 +1,17 @@
+A variable binding: val z = (x + y) + (y + 2); (* comment *)
+
+Syntax is just how you write something
+Semantics is what that something means
+  -Type-checking(before program runs)
+  -Evaluation(as program runs)
+For variable bindins:
+  -Type-check expression and extend static environment
+  -Evaluate expression and extend dynamic environment
+ ---------------------------------------------------------
+ Every kind of expression has
+ 1. Syntax
+ 2. Type-checking rules
+    · Produces a type or fails (with a bad error message)
+    · Types so far: int bool unit
+ 3. Evaluation rules(uesd only on things that type-check)
+    · Produces a value (or exception or infinite-loop)
